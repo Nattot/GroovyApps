@@ -20,7 +20,7 @@ const LoginScreen = ({ navigation }) => {
 
     // send post request to API endpoint
     await axios
-      .post("http://10.10.28.121:5000/v1/users/signIn", {
+      .post("http://10.10.28.121:5000/v1/ga/users/signIn", {
         nomorHP,
       })
       .then((res) => {

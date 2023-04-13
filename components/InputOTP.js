@@ -32,7 +32,7 @@ const InputOTP = ({ navigation }) => {
           console.log("Sending request...");
 
           await axios
-            .get("http://10.10.28.121:5000/v1/users/resendOTP")
+            .get("http://10.10.28.121:5000/v1/ga/users/resendOTP")
             .then((res) => {
               if (res.data.status === 0) {
                 console.log(res.data);
@@ -55,7 +55,7 @@ const InputOTP = ({ navigation }) => {
 
     // send POST request to API endpoint
     await axios
-      .post("http://10.10.28.121:5000/v1/users/verified", {
+      .post("http://10.10.28.121:5000/v1/ga/users/verified", {
         otp,
       })
       .then((res) => {

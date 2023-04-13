@@ -23,7 +23,7 @@ const Register = ({ navigation }) => {
 
     // send POST request to API endpoint
     await axios
-      .post("http://10.10.28.121:5000/v1/users/signUp", {
+      .post("http://10.10.28.121:5000/v1/ga/users/signUp", {
         firstName,
         lastName,
         nomorHP,
